@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>CONTENIDO EN DESARROLLO</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noticias Ecopetrol</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <header>
+      <figure><img src="./assets/images/logo-ecopetrol.svg" alt="logo_1" width="150" height="250"></figure>
+      <h1>Noticias</h1>
+    </header>
+    <nav>
+        <h2 id="link1"><a target="_blank" href="https://www.ecopetrol.com.co/wps/portal/">Portal principal</a></h2>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <h2 id="link2"><a target="_blank" href="https://www.ecopetrol.com.co/wps/portal/Home/es/noticias/detalle/resultados-ecopetrol-del-primes-trimestre-del-2023-aportan-al-desarrollo-y-a-la-seguridad-energetica">Noticia del día</a></h2>
+    </nav>
+    <main>
+      <h3>Sobre la empresa</h3>
+      <p>
+        Ecopetrol es una empresa de economía mixta, de carácter comercial, organizada bajo la forma de sociedad anónima, del orden nacional, vinculada al Ministerio de Minas y Energía, de conformidad con lo establecido en la Ley 1118 de 2006, regida por los Estatutos Sociales que se encuentran contenidos de manera integral en la Escritura Pública n.º 5314 del 14 de diciembre de 2007, otorgada en la Notaría Segunda del Círculo Notarial.
+        En octubre de 2018, Ecopetrol inauguró un proyecto enfocado para toda la población. En conjunto con el municipio de Castilla La Nueva, logró consolidar una de las obras de infraestructura más ambiciosas de la Orinoquía colombiana. Se trató de la primera ecobiblioteca11​ del país, que prepara a las futuras generaciones con tecnología de punta con miras al desarrollo de la región.
+      </p>
+      <img src="./assets/images/ecopetrol.jpg" alt="logo_1" width="500" height="400">
+    </main>
+    <aside>
+      <form >
+        <fieldset>
+            <legend><h3>Ingrese sus datos y comentarios</h3></legend>
+            
+            <label>Nombre:<input type="text"/></label><br>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email"/><br>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone"/><br><br>
+
+            <label for="mensaje">Dejenos sus comentarios:</label><br>
+            <textarea
+                name=""
+                id="mensaje"
+                cols="30"
+                rows="7"
+            ></textarea><br><br>
+
+            <label for="pais">¿Encontró útil la información?</label>
+            <select name="pais" id="pais">
+                <option value="select">Seleccione</option>
+                <option value="mucho">Mucho</option>
+                <option value="nornal">Normal</option>
+                <option value="nada">Para nada</option>
+            </select><br>
+
+            <label> ¿Desea suscribirse a nuestra Newsletter? </label>
+            <label>Si<input type="radio" name="casado" value="Si" /></label>
+            <label>No<input type="radio" name="casado" value="No" /></label><br><br>
+            
+            <div>
+                <button id="send" type="sudmit">Enviar</button>
+                <button id="clear" type="reset">Limpiar</button>
+            </div>
+
+        </fieldset>
+    </form>
+    </aside>
+    <footer>
+      <label> Edificio Principal Cr. 13 No. 36 - 24, Bogotá, Colombia. </label>
+      <label> Horario de atención: 7:30 a.m. a 4:30 p.m. </label>
+      <label> Conmutador +57 310 315 8600. Línea gratuita nacional: 018000918418. </label>
+    </footer>
+  </body>
 </html>
