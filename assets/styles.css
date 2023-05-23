@@ -1,53 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  header {
-    height: 88px;
-    background-color: #617A55;
-  }
-  nav {
-    height: 48px;
-    background-color: #F7E1AE;
-    justify-content: space-evenly;
-  }
-  main {
-    background-color: white;
-    height: 600px;
-  }
-  aside {
-    background-color: #FFF8D6;
-    height: 400px;
-  }
-  footer {
-    height: 50px;
-    background-color: #617A55;
-  }
-  header,
-  nav,
-  aside,
-  footer {
-    text-align: center;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
-  }
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    color: yellow;
-  }
-  #send {
-    background-color: #69e023;
-  }
-  #clear {
-      background-color: #00f5d4;
-  }
-  p {
-    text-align: justify;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(./images/bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  color: #FFFDFC;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.menu .navbar li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar {
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+}
+
+li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
