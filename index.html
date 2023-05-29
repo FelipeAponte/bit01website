@@ -13,13 +13,14 @@
   <link rel="stylesheet" href="/assets/styles/description.css">
   <link rel="stylesheet" href="/assets/styles/topics.css">
   <link rel="stylesheet" href="/assets/styles/contact.css">
+  <link rel="stylesheet" href="/assets/styles/modal.css">
   <script defer src="assets/js/app.js"></script>
 </head>
 <body>
 
   <header class="topheader">
     <nav class="topnav">
-      <a href="#" class="logo">
+      <a href="/index.html" class="logo">
         <img height="30" src="assets/images/go_logo.png" alt="gopher">
         <div class="logo-title">Blog</div>
       </a>
@@ -30,7 +31,7 @@
         <button class="close-menu">
           <img src="assets/images/close-icon.svg" alt="cerrar menú">
         </button>
-        <li><a href="#desingPatterns">Patrones de Diseño</a></li>
+        <li><a href="/desing_patterns.html">Patrones de Diseño</a></li>
         <li><a href="#technicalDebt">Deuda Técnica</a></li>
       </ul>
     </nav>
@@ -54,7 +55,7 @@
         <h2 class="topics-title">Temas</h2>
         <div class="topics-grid">
           <div class="topic">
-            <a href="#" class="topic-link">
+            <a href="/desing_patterns.html" class="topic-link">
               <h2 class="topic-title">Patrones de Diseño</h2>
               <img src="assets/images/patron.png" alt="Patrones" class="topic-img">
             </a>
@@ -90,6 +91,14 @@
       </section>
     </div>
   </div>
+
+  <section class="modal">
+    <div class="modal-content">
+      <img class="modal-image" src="assets/images/check.png" alt="terminal">
+      <h2 class="modal-message" name="response" id="response">Mensaje Modal</h2>
+      <button class="modal-close">Cerrar</button>
+    </div>
+  </section>
 
 </body>
 </html>
