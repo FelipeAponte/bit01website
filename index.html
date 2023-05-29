@@ -4,183 +4,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Golang Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="stylesheet" href="/assets/styles/navbar.css">
+  <link rel="stylesheet" href="/assets/styles/description.css">
+  <link rel="stylesheet" href="/assets/styles/topics.css">
+  <link rel="stylesheet" href="/assets/styles/contact.css">
+  <script defer src="assets/js/app.js"></script>
 </head>
 <body>
 
-  <header class="header">
-
-    <div class="menu container">
-      <a href="#" class="logo">Logo</a>
-      <input type="checkbox" id="menu">
-      <label for="menu">
-        <img src="./assets/images/menu.png" alt="">
-      </label>
-      <nav class="navbar">
-        <u1>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Productos</a></li>
-          <li><a href="">Contacto</a></li>
-        </u1>
-      </nav>
-    </div>
-
-    <div class="header-content">
-      <div class="header-txt">
-        <h1>Everest</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati quam nam, commodi hic necessitatibus enim rerum dolor inventore labore tempora eius at dicta, nihil repudiandae alias sed fugit atque.
-        </p>
-        <a href="#" class="btn-1">Información</a>
-      </div>
-    </div>
-
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img height="30" src="assets/images/go_logo.png" alt="gopher">
+        <div class="logo-title">Blog</div>
+      </a>
+      <button class="open-menu">
+        <img src="assets/images/hamburger-icon.svg" alt="abrir menú">
+      </button>
+      <ul class="menu">
+        <button class="close-menu">
+          <img src="assets/images/close-icon.svg" alt="cerrar menú">
+        </button>
+        <li><a href="#desingPatterns">Patrones de Diseño</a></li>
+        <li><a href="#technicalDebt">Deuda Técnica</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="general container">
-    <h2>Programa</h2>
-    <div class="general-content">
-      <div class="general-1 txt">
-        <h3>Programa 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
+  <div class="horizontal-padding vertical-padding">
+    <section class="description" id="description">
+        <div class="description-info">
+            <h1 class="description-title">GoLang</h1>
+            <p class="description-details">Go es un lenguaje de programación concurrente y compilado con tipado estático inspirado en la sintaxis de C, pero con seguridad de memoria y recolección de basura. Ha sido desarrollado por Google y sus diseñadores iniciales fueron Robert Griesemer, Rob Pike y Ken Thompson.</p>
+        </div>
+        <span class="description-img-section">
+            <img class="description-img" src="assets/images/gopher.svg" alt="Gopher"/>
+        </span>
+    </section>
+  </div>
+
+  <section class="topics" id="topics">
+    <img src="assets/images/wave.svg" alt="division" class="wave wave-top">
+      <div class="topics-body">
+        <h2 class="topics-title">Temas</h2>
+        <div class="topics-grid">
+          <div class="topic">
+            <a href="#" class="topic-link">
+              <h2 class="topic-title">Patrones de Diseño</h2>
+              <img src="assets/images/patron.png" alt="Patrones" class="topic-img">
+            </a>
+          </div>
+          <div class="topic">
+            <a href="#" class="topic-link">
+              <h2 class="topic-title">Deuda Técnica</h2>
+              <img src="assets/images/deuda.png" alt="Patrones" class="topic-img">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="general-2 txt">
-        <h3>Programa 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
-      </div>
-      <div class="general-3 txt">
-        <h3>Programa 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
-      </div>
-    </div>
+    <img src="assets/images/wave.svg" alt="division" class="wave wave-bottom">
   </section>
-
-  <section class="info-1">
-    <div class="info-content container">
-      <h2>Información</h2>
-      <div class="info-circle">
-        <div class="circle-txt">
-          <div class="circle-1">
-            <h3>8000 m</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum!
-          </p>
-        </div>
-
-        <div class="circle-txt">
-          <div class="circle-1">
-            <h3>6.5 %</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum!
-          </p>
-        </div>
-
-        <div class="circle-txt">
-          <div class="circle-1">
-            <h3>35° C</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum!
-          </p>
-        </div>
-
-        <div class="circle-txt">
-          <div class="circle-1">
-            <h3>8 H</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum!
-          </p>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <section class="general g2 container">
-    <h2>Nuestro Equipo</h2>
-    <div class="general-content">
-      <div class="general-4 txt">
-        <h3>Programa 5</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
-      </div>
-      <div class="general-5 txt">
-        <h3>Programa 5</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
-      </div>
-      <div class="general-6 txt">
-        <h3>Programa 6</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate ab magni aliquid quasi aliquam!
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="info-2">
-    <div class="info-content container">
-      <h2>Testimonios</h2>
-      <div class="testi">
-
-        <div class="testi-left">
-          <div class="testi-txt">
-            <img src="./assets/images/t1.png" alt="">
-            <h3>Lorem</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit reprehenderit voluptates, commodi odio labore alias, culpa eveniet ullam at aspernatur nulla adipisci. Quaerat, placeat totam cupiditate sit aliquam asperiores!
-            </p>
-          </div>
-          <div class="testi-txt">
-            <img src="./assets/images/t2.png" alt="">
-            <h3>Lorem</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit reprehenderit voluptates, commodi odio labore alias, culpa eveniet ullam at aspernatur nulla adipisci. Quaerat, placeat totam cupiditate sit aliquam asperiores!
-            </p>
-          </div>
-        </div>
-
-        <div class="testi-right">
-          <div class="testi-txt">
-            <img src="./assets/images/t3.png" alt="">
-            <h3>Lorem</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit reprehenderit voluptates, commodi odio labore alias, culpa eveniet ullam at aspernatur nulla adipisci. Quaerat, placeat totam cupiditate sit aliquam asperiores!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer  container">
-    <h2>Contacto</h2>
-
-    <form>
-      <input class="campo" id="name" type="text" placeholder="Nombre">
-      <input class="campo" id="email" type="email" placeholder="Email">
-      <input class="btn-2" type="submit" value="Enviar">
-    </form>
   
-    <div class="footer-txt">
-      <p>Lorem ipsum dolor sit amet.</p>
+  <div class="horizontal-padding vertical-padding">
+    <div class="contact-group">
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2 class="contact-title">Suscribete a nuestra newsletter</h2>
+          <form class="contact-form">
+            <div class="contact-form-group">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="contact-form-group">
+              <label for="name">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <button type="submit" name="sendBtn" id="sendBtn" class="contact-form-submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </div>
+  </div>
 
-  </footer>
-  
-  <script src="./index.js"></script>
 </body>
 </html>
