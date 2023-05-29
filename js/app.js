@@ -31,10 +31,10 @@ sendBtn.addEventListener("click", (e) => {
     let B = email.value == "";
 
     if (A || B ) {
-        modalImage.src = "assets/images/error.png";
+        modalImage.src = "images/error.png";
         response.textContent = "Por favor ingrese todos los datos solicitados";
     } else {
-        modalImage.src = "assets/images/check.png";
+        modalImage.src = "images/check.png";
         response.textContent = `¡Hola ${name.value}!, gracias por suscribirte a nuestra newsletter.`;
     }
 
